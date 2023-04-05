@@ -11,7 +11,7 @@ import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-@DataJpaTest        //  internally used DB to run testcase
+@DataJpaTest        //  internally used DB to run testcase (in memory DB) ( no need to create DB manually, spring boot creates itself as in memory)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)  // each crud function must execute in ordre
 public class EmployeeRepositoryTest {
 
